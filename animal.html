@@ -36,6 +36,10 @@
         }
         const result = document.getElementById("resultHolder");
         result.innerHTML = `Correct: ${correct} | Wrong: ${wrong}`;
+        if(wrong>correct)
+        {
+            document.getElementById("resultHolder").innerHTML =  "Sorry, too many wrong guesses.";
+        }
     }
 function selectImage()
     {
